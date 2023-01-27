@@ -9,6 +9,10 @@ function populateBoard(size) {
 	for (let i = 0; i < size * size; i++) {
 		let square = document.createElement("div");
 		square.style.backgroundColor = "blue";
+        // change color on hover
+        square.addEventListener("mouseover", (e) => {
+            e.target.style.backgroundColor = "black";
+        })
 		// square.style.border = '1px solid black'
 
 		board.appendChild(square);
