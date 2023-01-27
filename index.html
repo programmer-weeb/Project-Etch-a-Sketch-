@@ -5,15 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-Sketch</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <nav></nav>
-    <main>
-        <div class="title-of-game"></div>
-        <div class="grid">
-            
+    <div class="flex-container">
+        <div class="title"><h1>SketchPad</h1></div>
+        <div class="content">
+            <div class="board"></div>
+            <div class="buttons">
+                <button>black</button>
+                <button>white</button>
+                <button>random</button>
+                <button>reset</button>
+            </div>
+            <div>
+                <input type="text" placeholder="Size of Board" value="16">
+                <button>Set Size</button>
+            </div>
         </div>
-    </main>
-    <footer></footer>
+    </div>
 </body>
 </html>
