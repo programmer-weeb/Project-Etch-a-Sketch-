@@ -1,7 +1,12 @@
 .board {
-    width: 500px;
-    height: 500px;
-    display: grid;
-    
+	width: 500px;
+	height: 500px;
+	display: grid;
+}
+
+.flex-container {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
 }
 
