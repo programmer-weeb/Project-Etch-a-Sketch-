@@ -1,5 +1,8 @@
 let color = "black";
-
+let click = false;
+document.querySelector('body').addEventListener('click', () => {
+	color=!color
+})
 function populateBoard(size) {
 	let board = document.querySelector(".board");
 	board.style.border = "1px solid";
@@ -23,10 +26,13 @@ function populateBoard(size) {
 
 function changeSquareColor(e) {
 	// e.target.style.backgroundColor = "black";
-	if (color == "random") {
-        this.style.backgroundColor = 'hsla(' + (Math.random() * 360) + ', 100%, 50%, 1)'
-	} else {
-		this.style.backgroundColor = color;
+	if (color == true) {
+		if (color == "random") {
+			this.style.backgroundColor =
+				"hsla(" + Math.random() * 360 + ", 100%, 50%, 1)";
+		} else {
+			this.style.backgroundColor = color;
+		}
 	}
 }
 
@@ -44,10 +50,9 @@ function changeColor(choice) {
 	color = choice;
 }
 
-function reset () {
-    let board = [...document.querySelector(".board")];
-    board.forEach(element => {
-        element.style.backgroundColor = 'white'
-    });
-    
+function reset() {
+	let board = [...document.querySelector(".board")];
+	board.forEach((element) => {
+		element.style.backgroundColor = "white";
+	});
 }
