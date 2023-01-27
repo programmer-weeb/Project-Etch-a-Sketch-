@@ -8,5 +8,5 @@ for (let i = 0; i < 256; i++) {
     // square.style.border = '1px solid black'
     
     board.appendChild(square)
-    // board.insertAdjacentElement('beforeend', square)
+    board.insertAdjacentElement('beforeend', square)
 }
